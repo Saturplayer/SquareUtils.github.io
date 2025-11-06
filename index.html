@@ -66,16 +66,19 @@
 
       <!-- Video Card -->
       <aside class="card">
-        <div class="card-small">Guide</div>
-        <h3 class="form-title">Video Tutorial</h3>
-        <div class="video-wrap">
-          <video width="100%" height="315" controls>
+        <div class="card-small small-note">How to use</div>
+        <h3 class="form-title">Guide</h3>
+
+        <!-- Lokales Video ersetzt YouTube -->
+        <div class="video-wrap" role="region" aria-label="Video">
+          <video width="100%" height="240" controls>
             <source src="video.mp4" type="video/mp4">
             Dein Browser unterstützt das Video-Tag nicht.
           </video>
         </div>
-        <div style="text-align:right;">
-          <small class="card-small">OdinUtils</small>
+
+        <div style="margin-top:12px;text-align:right;">
+          <small class="brand-small" style="position:static;">OdinUtils</small>
         </div>
       </aside>
     </section>
@@ -90,7 +93,7 @@
     const toast = document.getElementById("toast");
 
     // Pipedream Webhook URL hier einfügen
-    const pipedreamURL = "DEINE_PIPEDRMEAD_URL_HIER";
+    const pipedreamURL = "DEINE_PIPEDREAM_URL_HIER";
 
     const showToast = (message) => {
       toast.textContent = message;
